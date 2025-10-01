@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación</title>
+    <!-- CONEXIONES -->
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <p>Frutería</p>
+            <div>
+                <label id="label-datos-alumno" for="barra-busqueda">DATOS ALUMNO</label>
+                <input type="text" id="barra-busqueda">
+            </div>
+            <p id="carrito-datos">Carrito data</p>
+        </nav>
+    </header>
+    <main>
+        <section id="titulo">
+            <button onclick="ordenarNombre()" class="boton-ordenar-nombre">Ordenar por Nombre</button>
+            <h1>Nuestra Frutas</h1>
+            <button onclick="ordenarMenorAMayor()" class="boton-ordenar-mayor-menor">Ordenar de Mayor a Menor</button>
+        </section>
+        <section id="lista-frutas">
+
+        </section>
+        <hr>
+        <section id="carrito-contenedor">
+
+        </section>
+        <hr>
+        <section id="carrito-botones-total">
+            <button onclick="vaciarCarrito()" class="boton-vaciar">Vaciar Carrito</button>
+            <p id="total-carrito">Total</p>
+        </section>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* GLOBAL */
+:root{
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Cuerpo principal */
+
+body{
+    margin: 0px 0px 0px 0px;
+}
+
+/* Barra de navegación */
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(56, 165, 77);
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Seccion titulo de catálogo de frutas */
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Contenedor de frutas */
+
+#lista-frutas{
+    display: flex;
+}
+
+/* Carta de producto fruta */
+
+.card-producto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+    
+}
+
+.card-producto img{
+    width: 100px;
+    height: 80px;
+}
+
+.card-producto h3,p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Botones vaciar y eliminar */
+
+.boton-eliminar, .boton-vaciar{
+    background-color: rgb(197, 1, 1);
+}
+
+.boton-eliminar:hover, .boton-vaciar:hover{
+    background-color: rgb(134, 0, 0);
+}
+
+/* Contenedor de carrito */
+
+#carrito-contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Total y vaciar carrito */
+
+#carrito-botones-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
